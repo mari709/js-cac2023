@@ -10,16 +10,55 @@
         <nav>
             <picture><a href="../index.html"><img src="../img/branding/logo_light_horizontal.svg" alt=""></a></picture>
             <ul>
-                <li><a href="../productos">Productos</a></li>
-                <li><a href="../contacto">Contacto</a></li>
-                <li><a href="../login">Iniciar sesión</a></li>
-                <li><a href="../carrito"><img src="../img/icons/cart-icon.svg" alt="ir al carrito">Carrito</a></li>
+                <li><a href="./productos.html">Productos</a></li>
+                <li><a href="./contacto.html">Contacto</a></li>
+                <li><a href="./login.html">Iniciar sesión</a></li>
+                <li><a href="./carrito.html"><img src="../img/icons/cart-icon.svg" alt="ir al carrito">Carrito</a></li>
             </ul>
         </nav>
     </header>
-    <main>
 
-<section>
+
+    <aside id="sidebar-product">
+        <form id="filter-form">
+
+            <label for="search-product">Buscar producto:</label>
+          <input type="text" id="search-product" name="search-product" placeholder="Buscar...">
+          
+          <label for="sort-product">Ordenar por:</label>
+          <select id="sort-product" name="sort-product">
+            <option value="precio-asc">Precio (menor a mayor)</option>
+            <option value="precio-desc">Precio (mayor a menor)</option>
+            <option value="nuevo">Más nuevo</option>
+          </select>
+          
+          <label for="price-range">Precio:</label>
+          <input type="number" id="min-price" name="min-price" placeholder="Precio mínimo" min="0">
+          <input type="number" id="max-price" name="max-price" placeholder="Precio máximo">
+          
+          <fieldset>
+            <legend>Filtrar por:</legend>
+            <label for="new">
+              <input type="checkbox" id="new" name="new"> Nuevo
+            </label>
+            <label for="offers">
+              <input type="checkbox" id="offers" name="offers"> Ofertas
+            </label>
+            <label for="special-edition">
+              <input type="checkbox" id="special-edition" name="special-edition"> Edición especial
+            </label>
+            <label for="favorites">
+              <input type="checkbox" id="favorites" name="favorites"> Favoritos
+            </label>
+          </fieldset>
+          
+          <!-- Botón de filtrar -->
+          <button type="submit">Filtrar</button>
+        </form>
+    </aside>
+
+    <main>
+    <section>
     <ul>
         <li>
             <article>
@@ -153,14 +192,14 @@
         </li>
     </ul>
 </section>
-<main>
+</main>
     <footer>
         <section>
             <nav>
                 <ul>
                     <li><a href="./productos.html">productos</a></li>
                     <li><a href="./registro.html">registrarse</a></li>
-                    <li><a href="./login">Iniciar Sesión</a></li>
+                    <li><a href="./login.html">Iniciar Sesión</a></li>
                     <li><a href=""></a></li>
                 </ul>
                 <picture><img src="../img/branding/isotype.svg" alt="isotipo Funkoshop"></picture>
@@ -168,7 +207,7 @@
         </section>
         <p>All rights reserved 2023 - Funkoshop &copy;</p>
     </footer>
-    </main>
+
     
 
 
