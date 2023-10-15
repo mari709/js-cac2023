@@ -57,7 +57,7 @@
     display: block;
     padding: var(--spacing-8) var(--spacing-16);
     font-size: var(--font-medium);
-    transition: background .3s ease-in-out;
+    transition:  .3s ease-in-out;
 }
 
 .submenu__link:hover {
