@@ -17,6 +17,7 @@
 
 .navbar__item {
     /*margin-right: 20px;*/
+    text-transform: uppercase;
 }
 
   .navbar__link {
@@ -78,6 +79,6 @@ picture img {
     }
     
     .navbar__item {
-        margin: 10px 0;
+       /* margin: 5px 0;*/
     }
 }
