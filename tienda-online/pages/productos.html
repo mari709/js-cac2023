@@ -25,17 +25,22 @@
             <label for="search-product">Buscar producto:</label>
           <input type="text" id="search-product" name="search-product" placeholder="Buscar...">
           
+          <div class="form-group">
           <label for="sort-product">Ordenar por:</label>
           <select id="sort-product" name="sort-product">
             <option value="precio-asc">Precio (menor a mayor)</option>
             <option value="precio-desc">Precio (mayor a menor)</option>
             <option value="nuevo">Más nuevo</option>
           </select>
+        </div>
           
+
+        <div class="form-group">
           <label for="price-range">Precio:</label>
           <input type="number" id="min-price" name="min-price" placeholder="Precio mínimo" min="0">
           <input type="number" id="max-price" name="max-price" placeholder="Precio máximo">
-          
+        </div>
+        <div class="form-group">
           <fieldset>
             <legend>Filtrar por:</legend>
             <label for="new">
@@ -51,7 +56,7 @@
               <input type="checkbox" id="favorites" name="favorites"> Favoritos
             </label>
           </fieldset>
-          
+        </div>
           <!-- Botón de filtrar -->
           <button type="submit">Filtrar</button>
         </form>
