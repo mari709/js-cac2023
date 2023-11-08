@@ -69,14 +69,14 @@
         </section>
 
         <section class="collection container">
-            
+
             <picture>
                 <img src="./img/pokemon/vulpix-1.webp" alt="vulpix">
             </picture>
             <article>
                 <h3>POKEMON INDIGO</h3>
                 <p>Atrapa todos los que puedas y disfruta de una colección llena de amigos.</p>
-                <a class="collection__link"  href=" ./pages/productos.html">Ver Colección</a>
+                <a class="collection__link" href=" ./pages/productos.html">Ver Colección</a>
             </article>
 
         </section>
@@ -92,52 +92,63 @@
                 <img src="./img/harry-potter/snape-patronus-1.webp" alt="snape patronus">
             </picture>
         </section>
-        <section>
+        <section class="slider container glide">
             <h2 class="slider__title">Últimos Lanzamientos</h2>
-            <ul>
-                <li>
-                    <article>
-                        <a href=""></a>
-                        <picture>
-                            <img src="./img/star-wars/trooper-1.webp" alt="figura coleccionable de Trooper">
-                        </picture>
-                        <div>
-                            <p>STARS WARS</p>
-                            <h4>STORMTROOPER LIGHTSABER</h4>
-                            <p>$ 1799,99</p>
-                            <p>3 CUOTAS SIN INTERÉS</p>
-                        </div>
-                    </article>
-                </li>
-                <li>
-                    <article>
-                        <a href=""></a>
-                        <picture>
-                            <img src="./img/pokemon/pidgeotto-1.webp" alt="figura coleccionable de pidgeotto">
-                        </picture>
-                        <div>
-                            <p>POKEMON</p>
-                            <h4>PIDGEOTTO</h4>
-                            <p>$ 1799,99</p>
-                            <p>3 CUOTAS SIN INTERÉS</p>
-                        </div>
-                    </article>
-                </li>
-                <li>
-                    <article>
-                        <a href=""></a>
-                        <picture>
-                            <img src="./img/harry-potter/luna-1.webp" alt="figura coleccionable de Luna">
-                        </picture>
-                        <div>
-                            <p>HARRY POTTER</p>
-                            <h4>LUNA LOVEGOOD LION MASK</h4>
-                            <p>$ 1799,99</p>
-                            <p>3 CUOTAS SIN INTERÉS</p>
-                        </div>
-                    </article>
-                </li>
-            </ul>
+            <div class="glide__track" data-glide-el="track">
+                <ul class="slider__items glide__slides">
+                    <li class="slider__items glide__slide">
+                        <article>
+                            <a href=""></a>
+                            <picture>
+                                <img src="./img/star-wars/trooper-1.webp" alt="figura coleccionable de Trooper">
+                            </picture>
+                            <div>
+                                <p>STARS WARS</p>
+                                <h4>STORMTROOPER LIGHTSABER</h4>
+                                <p>$ 1799,99</p>
+                                <p>3 CUOTAS SIN INTERÉS</p>
+                            </div>
+                        </article>
+                    </li>
+                    <li class="slider__items glide__slide">
+                        <article>
+                            <a href=""></a>
+                            <picture>
+                                <img src="./img/pokemon/pidgeotto-1.webp" alt="figura coleccionable de pidgeotto">
+                            </picture>
+                            <div>
+                                <p>POKEMON</p>
+                                <h4>PIDGEOTTO</h4>
+                                <p>$ 1799,99</p>
+                                <p>3 CUOTAS SIN INTERÉS</p>
+                            </div>
+                        </article>
+                    </li>
+                    <li class="slider__items glide__slide">
+                        <article>
+                            <a href=""></a>
+                            <picture>
+                                <img src="./img/harry-potter/luna-1.webp" alt="figura coleccionable de Luna">
+                            </picture>
+                            <div>
+                                <p>HARRY POTTER</p>
+                                <h4>LUNA LOVEGOOD LION MASK</h4>
+                                <p>$ 1799,99</p>
+                                <p>3 CUOTAS SIN INTERÉS</p>
+                            </div>
+                        </article>
+                    </li>
+                </ul>
+                <div class="glide__arrows" data-glide-el="controls">
+                    <button class="glide__arrow glide__arrow--left" data-glide-dir="<"><iconify-icon
+                            icon="icons8:chevron-left-round"></iconify-icon>
+                    </button>
+                    <button class="glide__arrow glide__arrow--right" data-glide-dir=">"><iconify-icon
+                            icon="icons8:chevron-right-round"></iconify-icon>
+                    </button>
+                </div>
+            </div>
+
         </section>
     </main>
 
@@ -154,6 +165,9 @@
         </nav>
         <p class="footer__copy">All rights reserved 2023 - Funkoshop &copy;</p>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/iconify-icon@1.0.7/dist/iconify-icon.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
+    <script src="./js/slide.js"></script>
 </body>
 
 </html>
