@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Item</title>
-    <link rel="stylesheet" href="./../css/index.css">
+    <link rel="stylesheet" href="./../../css/index.css">
 
 </head>
 
@@ -13,13 +13,13 @@
     <header class="page-header">
         <nav class="navbar container">
             <picture class="nabvar__logo">
-                <a href="./../index.html">
-                    <img src="./../img/branding/logo_light_horizontal.svg" alt="Isologotipo de la Marca Funkoshop">
+                <a href="././../../index.html">
+                    <img src="./../../img/branding/logo_light_horizontal.svg" alt="Isologotipo de la Marca Funkoshop">
                 </a>
             </picture>
             <ul class="navbar__menu">
                 <li class="navbar__item with-submenu">
-                    <a class="navbar__link with-icon" href="./../pages/productos.html">SHOP<iconify-icon
+                    <a class="navbar__link with-icon" href="./../shop/productos.html">SHOP<iconify-icon
                             icon="tabler:chevron-down" style="color: white;"></iconify-icon></a>
                     <ul class="submenu">
                         <li class="submenu__item">
@@ -40,8 +40,8 @@
                     <a class="navbar__link" href="./../pages/admin/login.html">LOGIN</a>
                 </li class="navbar__item">
                 <li class="navbar__item">
-                    <a class="navbar__cart" href="./../pages/carrito.html">
-                        <img src="./../img/icons/cart-icon.svg" alt="ícono de carrito">
+                    <a class="navbar__cart" href="./../shop/carrito.html">
+                        <img src="./../../img/icons/cart-icon.svg" alt="ícono de carrito">
                     </a>
                 </li>
             </ul>
@@ -51,8 +51,8 @@
     <main class="container">
         <section class="item">
             <picture class="item__img card-item__cover">
-                <img src="../img/star-wars/baby-yoda-1.webp" alt="" class="card-item__img--front">
-                <img src="../img/star-wars/baby-yoda-box.webp" alt="" class="card-item__img--back">
+                <img src="./../../img/star-wars/baby-yoda-1.webp" alt="" class="card-item__img--front">
+                <img src="./../../img/star-wars/baby-yoda-box.webp" alt="" class="card-item__img--back">
             </picture>
             <article class="item__info">
                 <p class="item__licence">STAR WARS</p>
@@ -60,9 +60,9 @@
                 <p class="item__description">Figura coleccionable de Baby Yoda (Grogu) - The Mandalorian</p>
                 <p class="item__price">$ 1799,9.-</p>
                 <div class="item__cart">
-                    <button class="item__quantity" type="button">-</button>
-                    <input class="item__input" type="text" name="" id="" placeholder="0">
-                    <button class="item__quantity" type="button">+</button>
+                    <button id="subtract" class="item__quantity" type="button">-</button>
+                    <input class="item__input" type="text" name="quantity" id="quantity" placeholder="0">
+                    <button id="add" class="item__quantity" type="button">+</button>
                     <button class="item__submit btn btn--primary btn--medium" type="submit">Agregar al carrito</button>
                 </div>
                 <p class="item__promo"><a href="">Ver métodos de pago</a>- 3 cuotas sin interés</p>
@@ -76,7 +76,7 @@
                         <article>
                             <a href=""></a>
                             <picture>
-                                <img src="./../img/star-wars/trooper-1.webp" alt="figura coleccionable de Trooper">
+                                <img src="./../../img/star-wars/trooper-1.webp" alt="figura coleccionable de Trooper">
                             </picture>
                             <div>
                                 <p>STARS WARS</p>
@@ -90,7 +90,7 @@
                         <article>
                             <a href=""></a>
                             <picture>
-                                <img src="./../img/pokemon/pidgeotto-1.webp" alt="figura coleccionable de pidgeotto">
+                                <img src="./../../img/pokemon/pidgeotto-1.webp" alt="figura coleccionable de pidgeotto">
                             </picture>
                             <div>
                                 <p>POKEMON</p>
@@ -104,7 +104,7 @@
                         <article>
                             <a href=""></a>
                             <picture>
-                                <img src="./../img/harry-potter/luna-1.webp" alt="figura coleccionable de Luna">
+                                <img src="./../../img/harry-potter/luna-1.webp" alt="figura coleccionable de Luna">
                             </picture>
                             <div>
                                 <p>HARRY POTTER</p>
@@ -133,18 +133,20 @@
     <footer class="footer">
         <nav class="navbar container">
             <ul class="navbar__item">
-                <li class="navbar__item"><a class="navbar__link" href="./../pages/productos.html">Productos</a></li>
-                <li class="navbar__item"><a class="navbar__link" href="./../pages/registro.html">Registrarse</a></li>
-                <li class="navbar__item"><a class="navbar__link" href="./../pages/login.html">Iniciar Sesión</a></li>
+                <li class="navbar__item"><a class="navbar__link" href="./../shop/productos.html">Productos</a></li>
+                <li class="navbar__item"><a class="navbar__link" href="./../admin/registro.html">Registrarse</a></li>
+                <li class="navbar__item"><a class="navbar__link" href="./../pages/admin/login.html">Iniciar Sesión</a>
+                </li>
                 <li class="navbar__item"><a class="navbar__link" href=""></a></li>
             </ul>
-            <picture><img src="./../img/branding/isotype.svg" alt="isotipo Funkoshop"></picture>
+            <picture><img src="./../../img/branding/isotype.svg" alt="isotipo Funkoshop"></picture>
         </nav>
         <p class="footer__copy">All rights reserved 2023 - Funkoshop &copy;</p>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/iconify-icon@1.0.7/dist/iconify-icon.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
-    <script src="./../js/slide.js"></script>
+    <script src="./../../js/slide.js"></script>
+    <script src="./../../js/item.js"></script>
 </body>
 
 </html>
