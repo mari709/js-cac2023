@@ -1,19 +1,49 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Carrito - Muñequitos</title>
+    <link rel="stylesheet" href="../../css/index.css">
+
 </head>
+
 <body>
-    <header>
-        <nav>
-            <picture><a href="../index.html"><img src="../img/branding/logo_light_horizontal.svg" alt=""></a></picture>
-            <ul>
-                <li><a href="./productos.html">Productos</a></li>
-                <li><a href="./contacto.html">Contacto</a></li>
-                <li><a href="./login.html">Iniciar sesión</a></li>
-                <li><a href="./carrito.html "><img src="../img/icons/cart-icon.svg" alt="ir al carrito">Carrito</a></li>
+    <header class="page-header">
+        <nav class="navbar container">
+            <picture class="nabvar__logo">
+                <a href="./index.html">
+                    <img src="../../img/branding/logo_light_horizontal.svg" alt="Isologotipo de la Marca Funkoshop">
+                </a>
+            </picture>
+            <ul class="navbar__menu">
+                <li class="navbar__item with-submenu">
+                    <a class="navbar__link with-icon" href="./pages/shop/productos.html">SHOP<iconify-icon
+                            icon="tabler:chevron-down" style="color: white;"></iconify-icon></a>
+                    <ul class="submenu">
+                        <li class="submenu__item">
+                            <a href="" class="submenu__link">Funkos</a>
+                        </li>
+                        <li class="submenu__item">
+                            <a href="" class="submenu__link">Remeras</a>
+                        </li>
+                        <li class="submenu__item">
+                            <a href="" class="submenu__link">LLaveros</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a class="navbar__link" href="./pages/contacto.html">CONTACTO</a>
+                </li class="navbar__item">
+                <li>
+                    <a class="navbar__link" href="./pages/admin/login.html">LOGIN</a>
+                </li class="navbar__item">
+                <li class="navbar__item">
+                    <a class="navbar__cart" href="./pages/shop/carrito.html">
+                        <img src="././../../img/icons/cart-icon.svg" alt="ícono de carrito">
+                    </a>
+                </li>
             </ul>
         </nav>
     </header>
@@ -32,24 +62,26 @@
                     <h6>STAR WARS</h6>
                     <p>precio $1799,99</p>
                 </div>
-                <div><input type="number" id="cantidad" name="cantidad" value="2" min="1" required></div></div>
-                    
+                <div><input type="number" id="cantidad" name="cantidad" value="2" min="1" required></div>
+                </div>
+
                 <div>
                     <p>$3599,98</p>
                 </div>
-            </section>  
+            </section>
         </section>
 
         <section>
             <h2>Resumen</h2>
-                <p>Cantidad de elementos <span id="cantidad-elementos">3</span></p>    
-                <p>Subtotal <span id="subtotal">$ 5.399,97</span></p>
-                <p>Envio <span id="envio">$0,00</span></p>
-                <hr>
-                <p>TOTAL <span id="total">$ 5.399,97</span></p>
-                <button class="btn-pagar">Ir a Pagar</button>
+            <p>Cantidad de elementos <span id="cantidad-elementos">3</span></p>
+            <p>Subtotal <span id="subtotal">$ 5.399,97</span></p>
+            <p>Envio <span id="envio">$0,00</span></p>
+            <hr>
+            <p>TOTAL <span id="total">$ 5.399,97</span></p>
+            <button class="btn-pagar">Ir a Pagar</button>
         </section>
     </main>
-<!-- footer -->
+    <!-- footer -->
 </body>
+
 </html>
