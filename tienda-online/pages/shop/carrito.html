@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Carrito - Muñequitos</title>
     <link rel="stylesheet" href="../../css/index.css">
+    <script src="https://kit.fontawesome.com/1efe046873.js" crossorigin="anonymous"></script>
+
 
 </head>
 
@@ -47,41 +49,84 @@
             </ul>
         </nav>
     </header>
-    <main>
-        <section>
+    <main class="container section-principal">
+        <section class="section-titulos-principales">
             <h2>Carrito de compras</h2>
             <section class="encabezado-tabla-detalle">
                 <div>Detalle de producto</div>
                 <div>Cantidad</div>
                 <div>Total</div>
+                <div class="encabezado__itemBorrar"></div>
             </section>
             <section class="cart-item">
-                <div><img src="" alt=""></div>
-                <div>
+                <div class="image"><img src="../../img/star-wars/baby-yoda-1.webp" alt=""></div>
+                <div class="info">
                     <h3>BABY YODA BLUEBALL</h3>
                     <h6>STAR WARS</h6>
                     <p>precio $1799,99</p>
                 </div>
-                <div><input type="number" id="cantidad" name="cantidad" value="2" min="1" required></div>
+                <div class="quantity">
+                    <input type="number" id="cantidad" name="cantidad" value="2" min="1" required>
+                </div>
                 </div>
 
-                <div>
-                    <p>$3599,98</p>
+                <div class="total">
+                    <p class="precio-producto_carrito">$3599,98</p>
                 </div>
+                <div class="cancelar-producto"><i class="fa-regular fa-circle-xmark"></i></div>
+
             </section>
         </section>
 
-        <section>
+        <section class="cart-item">
+            <div class="image">
+                <picture><img src="./img/pokemon/pidgeotto-1.webp" alt="PIDGEOTTO"></picture>
+            </div>
+            <div class="info">
+                <h3>PIDGEOTTO</h3>
+                <h6>POKEMON</h6>
+                <p>precio $1799,99</p>
+            </div>
+            </div>
+            <div class="quantity">
+                <input type="number" id="cantidad" name="cantidad" value="1" min="1" required>
+            </div>
+            </div>
+            <div class="total">
+                <p class="precio-producto_carrito">$1799,99</p>
+            </div>
+            <div class="cancelar-producto"><i class="fa-regular fa-circle-xmark"></i></div>
+        </section>
+        </section>
+        <!-- resumen -->
+        <section class="section-titulos-principales derecha">
             <h2>Resumen</h2>
-            <p>Cantidad de elementos <span id="cantidad-elementos">3</span></p>
-            <p>Subtotal <span id="subtotal">$ 5.399,97</span></p>
-            <p>Envio <span id="envio">$0,00</span></p>
-            <hr>
-            <p>TOTAL <span id="total">$ 5.399,97</span></p>
-            <button class="btn-pagar">Ir a Pagar</button>
+            <section class="tabla-resumen-con-boton">
+                <article id="tabla-resumen">
+                    <p class="item-resumen_carrito">Cantidad de elementos <span id="cantidad-elementos">3</span></p>
+                    <p class="item-resumen_carrito">Subtotal <span id="subtotal">$ 5.399,97</span></p>
+                    <p class="item-resumen_carrito">Envio <span id="envio">$0,00</span></p>
+                    <!-- <hr> -->
+                    <p class="item-resumen_carrito">TOTAL <span id="total">$ 5.399,97</span></p>
+                </article>
+                <button class="btn-pagar">Ir a Pagar</button>
+            </section>
+
         </section>
     </main>
     <!-- footer -->
+    <footer class="footer">
+        <nav class="navbar container">
+            <ul class="navbar__item">
+                <li class="navbar__item"><a class="navbar__link" href="./pages/productos.html">Productos</a></li>
+                <li class="navbar__item"><a class="navbar__link" href="./pages/registro.html">Registrarse</a></li>
+                <li class="navbar__item"><a class="navbar__link" href="./pages/login.html">Iniciar Sesión</a></li>
+                <li class="navbar__item"><a class="navbar__link" href=""></a></li>
+            </ul>
+            <picture><img class="logo-ft" src="../../img/branding/isotype.svg" alt="isotipo Funkoshop"></picture>
+        </nav>
+        <p class="footer__copy">All rights reserved 2023 - Funkoshop &copy;</p>
+    </footer>
 </body>
 
 </html>
