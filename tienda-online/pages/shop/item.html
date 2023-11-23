@@ -13,13 +13,13 @@
     <header class="page-header">
         <nav class="navbar container">
             <picture class="nabvar__logo">
-                <a href="././../../index.html">
+                <a href="../../index.html">
                     <img src="./../../img/branding/logo_light_horizontal.svg" alt="Isologotipo de la Marca Funkoshop">
                 </a>
             </picture>
             <ul class="navbar__menu">
                 <li class="navbar__item with-submenu">
-                    <a class="navbar__link with-icon" href="./../shop/productos.html">SHOP<iconify-icon
+                    <a class="navbar__link with-icon" href="./productos.html">SHOP<iconify-icon
                             icon="tabler:chevron-down" style="color: white;"></iconify-icon></a>
                     <ul class="submenu">
                         <li class="submenu__item">
@@ -34,13 +34,13 @@
                     </ul>
                 </li>
                 <li>
-                    <a class="navbar__link" href="./../pages/contacto.html">CONTACTO</a>
+                    <a class="navbar__link" href="../contacto.html">CONTACTO</a>
                 </li class="navbar__item">
                 <li>
-                    <a class="navbar__link" href="./../pages/admin/login.html">LOGIN</a>
+                    <a class="navbar__link" href="../admin/login.html">LOGIN</a>
                 </li class="navbar__item">
                 <li class="navbar__item">
-                    <a class="navbar__cart" href="./../shop/carrito.html">
+                    <a class="navbar__cart" href="./carrito.html">
                         <img src="./../../img/icons/cart-icon.svg" alt="ícono de carrito">
                     </a>
                 </li>
@@ -51,21 +51,24 @@
     <main class="container">
         <section class="item">
             <picture class="item__img card-item__cover">
-                <img src="./../../img/star-wars/baby-yoda-1.webp" alt="" class="card-item__img--front">
-                <img src="./../../img/star-wars/baby-yoda-box.webp" alt="" class="card-item__img--back">
+                <img class="card-item__img--front" src="../../img/star-wars/baby-yoda-1.webp"
+                    alt="Figura coleccionable de Baby Yoda (Grogu) - The Mandalorian Saga">
+                <img class="card-item__img--back" src="../../img/star-wars/baby-yoda-box.webp"
+                    alt="Figura coleccionable de Baby Yoda (Grogu) - The Mandalorian Saga">
             </picture>
             <article class="item__info">
                 <p class="item__licence">STAR WARS</p>
                 <h3 class="item__name">BABY YODA BLUEBALL</h3>
-                <p class="item__description">Figura coleccionable de Baby Yoda (Grogu) - The Mandalorian</p>
-                <p class="item__price">$ 1799,9.-</p>
-                <div class="item__cart">
+                <p class="item__description">Figura coleccionable de Baby Yoda (Grogu) - The Mandalorian Saga, edición
+                    limitada.</p>
+                <p class="item__price">$ 1799,99.-</p>
+                <form class="item__cart" action="#" method="POST" enctype="application/x-www-form-urlencoded">
                     <button id="subtract" class="item__quantity" type="button">-</button>
-                    <input class="item__input" type="text" name="quantity" id="quantity" placeholder="0">
+                    <input id="quantity" class="item__input" type="text" name="quantity" placeholder="0">
                     <button id="add" class="item__quantity" type="button">+</button>
                     <button class="item__submit btn btn--primary btn--medium" type="submit">Agregar al carrito</button>
-                </div>
-                <p class="item__promo"><a href="">Ver métodos de pago</a>- 3 cuotas sin interés</p>
+                </form>
+                <p class="item__promo"><a href="">Ver métodos de pago</a> - 3 CUOTAS SIN INTERÉS</p>
             </article>
         </section>
         <section class="slider container glide">
@@ -124,11 +127,7 @@
                     </button>
                 </div>
             </div>
-
-
         </section>
-
-
     </main>
     <footer class="footer">
         <nav class="navbar container">
