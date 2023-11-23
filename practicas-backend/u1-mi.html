@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página web dinámica</title>
+</head>
+
+<body>
+    <!--La fecha es <%=Datetime.Now()%> --> <!-- ASP.NET-->
+    <p id="mes"></p>
+
+
+    <!-- con javascript-->
+    <script>
+        let fecha = new Date(); // Crear un objeto de fecha
+        let meses = ['Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo', 'Junio', 'Julio', 'Agosto', 'Septiembre', 'Octubre', 'Noviembre', 'Diciembre'];
+        let mesActual = meses[fecha.getMonth()];
+        document.getElementById('mes').innerHTML = 'Estamos en: ' + mesActual;
+    </script>
+</body>
+
+</html>
