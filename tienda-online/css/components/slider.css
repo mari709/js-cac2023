@@ -11,7 +11,7 @@
     text-transform: uppercase;
 }
 
-iconify-icon {
+.glide__arrow > iconify-icon {
     color: var(--primary-solid);
     font-size: var(--font-xlarge);
     font-weight: 700;
