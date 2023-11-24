@@ -9,5 +9,4 @@ const server = http.createServer((req, res) => {
  });
  res.end(file);
 });
-/*revisar*/
 server.listen(3000, () => console.log('Servidor corriendo en puerto http://localhost:3000'));
