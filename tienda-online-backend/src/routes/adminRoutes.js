@@ -1,6 +1,7 @@
 const express = require('express');
 const router = express.Router();
 
+/*abstraer en controladores*/
 router.get('/', (req, res) => res.send('Route for admin view'));
 router.get('/create', (req, res) => res.send('Route for admin/create view GET'));
 router.post('/create', (req, res) => res.send('Route for admin/create form view POST'));
@@ -10,6 +11,6 @@ router.delete('/delete/:id', (req, res) => res.send(`Route for delete item ID: $
 router.get('/login', (req, res) => res.send('Route for login view GET'));
 router.post('/login', (req, res) => res.send('Route for login view POST'));
 router.get('/register', (req, res) => res.send('Route for register GET'));
-router.post('/register', (req, res) => res.send('Route for register POST'));
+router.post('/register', (req, res) => res.send('Route for register GET'));
 
 module.exports = router;
