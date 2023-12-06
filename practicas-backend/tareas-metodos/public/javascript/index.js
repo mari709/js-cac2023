@@ -1,0 +1,1 @@
+console.log('mensaje de saludo soy el index.js');
