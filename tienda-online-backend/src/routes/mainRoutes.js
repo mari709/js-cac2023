@@ -1,10 +1,10 @@
 const express = require('express');
 const router = express.Router();
-const mainControllers = require('../controllers/mainControllers');
+const mainControllers = require('../controllers/mainController');
 
 
 router.get('/home', mainControllers.home);
-router.get('/contacto', mainControllers.contact);
+router.get('/contact', mainControllers.contact);
 router.get('/about', mainControllers.about);
 router.get('/faqs', mainControllers.faqs);
 

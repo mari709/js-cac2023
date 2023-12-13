@@ -6,6 +6,11 @@ const adminRoutes = require('./src/routes/adminRoutes');
 
 
 app.use(express.static('public_html'));
+
+app.use(express.urlencoded({ extended: true }));
+app.use(express.json());
+
+
 app.use('/', mainRoutes);
 app.use('/shop', shopRoutes);
 app.use('/admin', adminRoutes);
