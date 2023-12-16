@@ -9,10 +9,6 @@ router.post('/create', adminControllers.createItem);
 router.get('/edit/:id', adminControllers.editView);
 router.put('/edit/:id', adminControllers.editItem);
 router.delete('/delete/:id', adminControllers.deleteItem);
-router.get('/login', adminControllers.loginView);
-router.post('/login', adminControllers.loginUser);
-router.get('/register', adminControllers.registerView);
-router.post('/register', adminControllers.registerUser);
 
 module.exports = router;
 
