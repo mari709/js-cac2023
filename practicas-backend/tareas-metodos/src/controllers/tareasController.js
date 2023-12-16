@@ -1,31 +1,31 @@
-const tareas = [
-    { id: 1, title: "Tarea 1", completed: false },
-    { id: 2, title: "Tarea 2", completed: false },
-    { id: 3, title: "Tarea 3", completed: false },
-    { id: 4, title: "Tarea 4", completed: false },
+const tasks = [
+    { id: 1, title: "task 1", completed: false },
+    { id: 2, title: "task 2", completed: false },
+    { id: 3, title: "task 3", completed: false },
+    { id: 4, title: "task 4", completed: false },
   ];
   
-  // Renderiza la página de índice con las tareas
+  // Renderiza la página de índice con las tasks
   const index = (req, res) => {
-      res.render("index", {tareas});
+      res.render("index", {tasks});
   };
 // Agrega una nueva tarea al array de tareas
   const store = (req, res) => {
-    const tarea = {
+    const task = {
       id: Date.now(),
       title: req.body.title,
       completed: false,
     };
-    tareas.push(tarea);
+    tasks.push(task);
   
     res.redirect("/");
   };
 
 // Cambia el estado de completitud de una tarea
 const update = (req, res) => {
-    tareas.forEach((tarea) => {
-    if (tarea.id === req.params.id) {
-        tarea.completed = !tarea.completed;
+    tasks.forEach((task) => {
+    if (task.id === req.params.id) {
+      task.completed = !task.completed;
     }
     });
 
@@ -34,7 +34,7 @@ const update = (req, res) => {
 
 // Elimina una tarea del array de tareas
 const destroy = (req, res) => {
-    tareas = tareas.filter((tarea) => tarea.id != req.params.id);
+  tasks = tasks.filter((task) => task.id != req.params.id);
 
     res.redirect("/");
 };
