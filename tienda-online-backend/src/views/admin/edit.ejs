@@ -1,52 +1,10 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Crear item | Muñequitos</title>
-    <link rel="stylesheet" href="../../css/index.css">
-</head>
-<body class="grid-fixed">
-    <header class="page-header"> <!-- Inicio Header -->
-        <nav class="navbar container">
-            <picture class="nabvar__logo">
-                <a href="../../index.html">
-                    <img src="../../img/branding/logo_light_horizontal.svg" alt="Isologotipo de la Marca Funkoshop">
-                </a>
-            </picture>
-            <ul class="navbar__menu">
-                <li class="navbar__item with-submenu">
-                    <a class="navbar__link with-icon" href="./shop.html">SHOP<iconify-icon icon="tabler:chevron-down"></iconify-icon></a>
-                    <ul class="submenu">
-                        <li class="submenu__item">
-                            <a href="" class="submenu__link">Funkos</a>
-                        </li>
-                        <li class="submenu__item">
-                            <a href="" class="submenu__link">Remeras</a>
-                        </li>
-                        <li class="submenu__item">
-                            <a href="" class="submenu__link">LLaveros</a>
-                        </li>
-                    </ul>
-                </li>
-                <li>
-                    <a class="navbar__link" href="../contact.html">CONTACTO</a>
-                </li class="navbar__item">
-                <li>
-                    <a class="navbar__link" href="../admin/login.html">LOGIN</a>
-                </li class="navbar__item">
-                <li class="navbar__item">
-                    <a class="navbar__cart" href="../cart.html">
-                        <img src="../../img/icons/cart-icon.svg" alt="ícono de carrito">
-                    </a>
-                </li>
-            </ul>
-        </nav>
-    </header> <!--   Fin Header -->
-    <main id="create" class="container">
-        <h2 class="create__title">CREAR NUEVO ITEM</h2>
-        <form class="create__form" action="/admin/create" method="POST" enctype="application/x-www-form-urlencoded">
+<%- include('../partials/header') %>    
+
+    <main id="edit" class="container">
+        <div class="section-titulos-principales">
+        <h2 class="edit__title section-titulos-principales">EDITAR ITEM</h2>
+    </div>
+        <form class="edit__form" action="/admin/edit" method="POST" enctype="application/x-www-form-urlencoded">
             <div class="form__flex">
                 <div class="form__box--flex">
                     <label class="form__label" for="collection">Categoría:</label>
@@ -110,34 +68,24 @@
                 <label class="form__label" for="images">Imagenes:</label>
                 <input type="file" name="images" id="img" multiple>
             </div>
-            <div class="form__flex">
-                <input class="form__btn btn btn--primary btn--large" type="submit" value="Agregar Producto">
-                <input class="form__btn btn btn--primary btn--large" type="reset" value="Limpiar">
+            <div class="form__box--flex">
+                <div class="edit__img">
+                    <img src="../../img/harry-potter/hermione-1.webp" alt="Figura Funko coleccionable de Hermione">
+                    <p class="edit__img-side">Frente</p>
+                </div>
+                <div class="edit__img">
+                    <img src="../../img/harry-potter/hermione-box.webp" alt="Figura Funko coleccionable de Hermione en caja">
+                    <p class="edit__img-side">Dorso</p>
+                </div>
+            </div>
+            <div>
+                <input class="btn btn--primary btn--large" type="submit" value="Modificar Producto">
+                <input class="btn btn--primary btn--large" type="reset" value="Limpiar">
             </div>
         </form>
     </main>
-    <footer class="footer">
-        <nav class="navbar container">
-            <ul class="navbar__item">
-                <li class="navbar__item">
-                    <a class="navbar__link" href="./pages/shop/shop.html">SHOP</a>
-                </li>
-                <li class="navbar__item">
-                    <a class="navbar__link" href="./pages/register.html">REGISTRARSE</a>
-                </li>
-                <li class="navbar__item">
-                    <a class="navbar__link" href="./pages/admin/login.html">LOGIN</a>
-                </li>
-                <li class="navbar__item">
-                    <a class="navbar__link" href="./pages/contact.html">CONTACTO</a>
-                </li>
-            </ul>
-            <picture>
-                <img src="../../img/branding/isotype.svg" alt="Isotipo de la marca Funkoshop">
-            </picture>
-        </nav>
-        <p class="footer__copy">All rights reserved 2023 - Funkoshop &copy;</p>
-    </footer>
+    <%- include('../partials/footer') %>    
+
     <script src="https://cdn.jsdelivr.net/npm/iconify-icon@1.0.7/dist/iconify-icon.min.js"></script>
 </body>
 </html>

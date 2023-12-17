@@ -62,7 +62,7 @@
     font-weight: 500;
     color: var(--dark-900);
     text-transform: uppercase;
-    border-bottom: 3px solid var(--primary-900);
+    border-bottom: 5px solid var(--primary-900);
 
 }
 
