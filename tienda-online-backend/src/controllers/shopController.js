@@ -1,5 +1,6 @@
 const path = require('path');
-const data = [
+const { getAll, getOne } = require('../models/productModels');
+/*const json = [
   {
     product_id: 1,
     licence_name: "Pokemon",
@@ -107,9 +108,12 @@ const data = [
     img_front: "/img/pokemon/pidgeotto-1.webp",
     img_back: "/img/pokemon/pidgeotto-box.webp"
   }
-];
+];*/
 module.exports = {
-  shopView: (req, res) => {
+  shopView: async (req, res) => {
+
+    const data = await getAll();
+    //console.log(data);
 
     res.render(path.resolve(__dirname, '../views/shop/shop.ejs'), {
       title: "Tienda", 
@@ -117,9 +121,11 @@ module.exports = {
     })
   },
 
-  itemView: (req, res) => {
+  itemView: async (req, res) => { //no olvidar que es asincrona
     const itemId = req.params.id;
-    const item = data.find(item => item.product_id ==itemId);
+
+    //const item = json.find(item => item.product_id ==itemId);
+    const [item] = await getOne(itemId); //recordar await
     res.render(path.resolve(__dirname, '../views/shop/item.ejs'),
       {
         
