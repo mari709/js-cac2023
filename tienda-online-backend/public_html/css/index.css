@@ -6,7 +6,7 @@
 
 /* MISCELANEOUS */
 
-@import url('./misc/variables.css');
+/*@import url('./misc/variables.css');*/
 @import url('./misc/normalize.css');
 @import url('./misc/helpers.css');
 @import url('./misc/animations.css');
@@ -32,11 +32,13 @@
 @import url('./pages/login.css');
 @import url('./pages/register.css');
 
-@import url('./pages/carrito.css');
 @import url('./pages/item.css');
 @import url('./pages/shop.css');
 
 @import url('./pages/contact.css');
+
+@import url('./pages/carrito.css');
+
 
 
 

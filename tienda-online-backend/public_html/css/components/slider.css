@@ -8,7 +8,8 @@
 .slider__title {
     font-family: var(--alternative-font);
     font-size: var(--font-display);
-    text-transform: uppercase;
+   /* text-transform: uppercase;*/
+   color: var(--dark-solid);
 }
 
 .glide__arrow > iconify-icon {
@@ -20,6 +21,7 @@
 .glide__arrow, .glide__arrows {
     border: none;
     box-shadow: none;
+    
 }
 
 .glide__arrow--right {

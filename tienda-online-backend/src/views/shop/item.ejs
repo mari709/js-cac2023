@@ -11,7 +11,7 @@
                 <p class="item__licence"><%= item.licence_name %></p>
                 <h3 class="item__name"><%= item.product_name %></h3>
                 <p class="item__description"><%= item.product_description %></p>
-                <p class="item__price"><%= item.price %></p>
+                <p class="item__price">$ <%= item.price %></p>
                 <form class="item__cart" action="#" method="POST" enctype="application/x-www-form-urlencoded">
                     <button id="subtract" class="item__quantity" type="button">-</button>
                     <input id="quantity" class="item__input" type="text" name="quantity" placeholder="0">
@@ -25,45 +25,45 @@
             <h2 class="slider__title">Productos Relacionados</h2>
             <div class="glide__track" data-glide-el="track">
                 <ul class="slider__items glide__slides">
-                    <li class="slider__item glide__slide">
+                    <li class="slider__items glide__slide">
                         <article>
                             <a href=""></a>
                             <picture>
-                                <img src="./../../img/star-wars/trooper-1.webp" alt="figura coleccionable de Trooper">
+                                <img src="/../img/star-wars/trooper-1.webp" alt="figura coleccionable de Trooper">
                             </picture>
                             <div>
-                                <p>STARS WARS</p>
-                                <h4>STORMTROOPER LIGHTSABER</h4>
-                                <p>$ 1799,99</p>
-                                <p>3 CUOTAS SIN INTERÉS</p>
+                                <p class="card-item__licence" >STARS WARS</p>
+                                <h4 class="card-item__name" >  STORMTROOPER LIGHTSABER</h4>
+                                <p class="card-item__price" >$ 1799,99</p>
+                                <p class="card-item__promo" >3 CUOTAS SIN INTERÉS</p>
                             </div>
                         </article>
                     </li>
-                    <li class="slider__item glide__slide">
+                    <li class="slider__items glide__slide">
                         <article>
                             <a href=""></a>
                             <picture>
-                                <img src="./../../img/pokemon/pidgeotto-1.webp" alt="figura coleccionable de pidgeotto">
+                                <img src="/../img/pokemon/pidgeotto-1.webp" alt="figura coleccionable de pidgeotto">
                             </picture>
                             <div>
-                                <p>POKEMON</p>
-                                <h4>PIDGEOTTO</h4>
-                                <p>$ 1799,99</p>
-                                <p>3 CUOTAS SIN INTERÉS</p>
+                                <p class="card-item__licence" >POKEMON</p>
+                                <h4  class="card-item__name"  >PIDGEOTTO</h4>
+                                <p class="card-item__price" >$ 1799,99</p>
+                                <p class="card-item__promo" >3 CUOTAS SIN INTERÉS</p>
                             </div>
                         </article>
                     </li>
-                    <li class="slider__item glide__slide">
+                    <li class="slider__items glide__slide">
                         <article>
                             <a href=""></a>
                             <picture>
-                                <img src="./../../img/harry-potter/luna-1.webp" alt="figura coleccionable de Luna">
+                                <img src="/../img/harry-potter/luna-1.webp" alt="figura coleccionable de Luna">
                             </picture>
                             <div>
-                                <p>HARRY POTTER</p>
-                                <h4>LUNA LOVEGOOD LION MASK</h4>
-                                <p>$ 1799,99</p>
-                                <p>3 CUOTAS SIN INTERÉS</p>
+                                <p class="card-item__licence" >HARRY POTTER</p>
+                                <h4 class="card-item__name"  >LUNA LOVEGOOD LION MASK</h4>
+                                <p class="card-item__price" >$ 1799,99</p>
+                                <p class="card-item__promo" >3 CUOTAS SIN INTERÉS</p>
                             </div>
                         </article>
                     </li>
@@ -77,6 +77,7 @@
                     </button>
                 </div>
             </div>
+
         </section>
     </main>
     <%- include('../partials/footer') %>    

@@ -1,22 +1,24 @@
 <%- include('./partials/header') %>    
 
-    <main class="section-titulos-principales main-section container">
-        <h2 class="section-titulos-principales">Contacto </h2>
+    <main class="section-titulos-principales main-section-contact container">
+        <h2>Contacto </h2>
     </main>
 
-    <section id="contacto-form">
-        <form action="/enviar-mensaje" method="post">
+    <section  id="contacto-form">
+        <p>Dejanos tu consulta. Un asesor se pondrá en contacto con vos.</p>
+
+        <form class="form-contact" action="/enviar-mensaje" method="post">
             <!-- Campos del formulario (nombre, correo, mensaje, etc.) -->
-            <label for="nombre">Nombre:</label>
-            <input type="text" id="nombre" name="nombre" required>
+            <label class="label-contact"  for="nombre">Nombre:</label>
+            <input class="input-contact" type="text" id="nombre" name="nombre" required>
 
-            <label for="correo">Correo electrónico:</label>
-            <input type="email" id="correo" name="correo" required>
+            <label class="label-contact"  for="correo">Correo electrónico:</label>
+            <input class="input-contact"  type="email" id="correo" name="correo" required>
 
-            <label for="mensaje">Mensaje:</label>
-            <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+            <label class="label-contact"  or="mensaje">Mensaje:</label>
+            <textarea class="textarea-contact" id="mensaje" name="mensaje" rows="4" required></textarea>
 
-            <button type="submit">Enviar Mensaje</button>
+            <button class="btn-primary btn-contact" type="submit">Enviar Mensaje</button>
         </form>
     </section>
 
