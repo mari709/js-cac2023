@@ -1,23 +1,23 @@
-    <main>
-        <h1> Tarea</h1>
-        <h2>Crear Tarea</h2>
-        <form action="/" method="post">
-            <div>
-                <label for="title">Nombre: </label>
-                <input type="text" name="title" id="title" />
-            </div>
-            <button type="submit">Enviar</button>
-        </form>
-        <h2>Listado de tareas</h2>
-        <ul>
-            <!-- La tareas que vamos hacer dinamicas -->
-            <!-- <li> Tarea 1</li>
-            <li> Tarea 2 </li> -->
-            <% tareas.forEach(tarea => { %> 
-              <li> <%= tarea.title %></li>
-              
-            <% }) %>
-        </ul>
-    </main>
- 
-</html>
+<main>
+
+    <h1> Tasks</h1>
+    <h2>Create task</h2>
+
+<form action="/" method="post">
+<div>
+  <label for="title">Name: </label>
+  <input type="text" name="title" id="title" />
+</div>
+<button type="submit">Send</button>
+</form>
+
+<h2>List</h2>
+<ul>
+
+    <% tasks.forEach(task => { %> 
+  <%- include('partials/item', { task }) %>
+<% }) %>
+</ul>
+
+
+</main>

@@ -3,6 +3,7 @@
     position: relative;
 }
 
+/*falta colocar tarjeta "nuevo"*/
 .card-item__tag {
     font-size: var(--font-xsmall);
     text-transform: uppercase;

@@ -1,4 +1,4 @@
-.section-principal {
+.main-section {
     padding-top: var(--spacing-128);
 }
 
@@ -194,7 +194,7 @@ p>span {
 }
 
 @media screen and (max-width: 768px) {
-    .section-principal {
+    .main-section {
         margin: 20px;
     }
 }

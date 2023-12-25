@@ -1,6 +1,7 @@
 const express = require('express');
 const router = express.Router();
 
+/*otra forma de trabajarlo*/
 const {
   shopView,
   itemView,

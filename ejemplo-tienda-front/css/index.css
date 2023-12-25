@@ -18,7 +18,7 @@
 
 /* COMPONENTS */
 
-@import url('./components/buttons.css');
+@import url('./components/button.css');
 @import url('./components/form.css');
 @import url('./components/card.css');
 @import url('./components/slider.css');

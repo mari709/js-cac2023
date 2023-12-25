@@ -1,11 +1,12 @@
-.section-principal {
+.main-section {
     padding-top: var(--spacing-128);
+    padding-bottom:  var(--spacing-128);
 }
 
 .section-titulos-principales>h2 {
     font-family: var(--alternative-font);
-    font-size: var(--font-display);
-    text-transform: uppercase;
+    font-size: var(--font-jumbo);
+   /* text-transform: uppercase;*/
     border-bottom: 5px solid var(--primary-solid);
     margin-bottom: 10px;
     display: inline-block;
@@ -194,7 +195,7 @@ p>span {
 }
 
 @media screen and (max-width: 768px) {
-    .section-principal {
+    .main-section {
         margin: 20px;
     }
 }

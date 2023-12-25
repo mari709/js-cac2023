@@ -19,18 +19,19 @@
     --dark-bg-solid: #30343F;
     --light-bg-solid: #FAFAFA;
     --light-font-solid: #FFFFFF;
+    --light-bg-container:#FAFAFF;
 
     /*Typography*/
     --base-font: 'Inter', sans-serif;
     --alternative-font:'Raleway', sans-serif;
 
     /*Font sizes*/
-    --font-display: 4.6em;
-    --font-jumbo: 3.8em;
-    --font-xlarge: 3em;
-    --font-medium: 1.8em;
-    --font-small: 1.6em;
-    --font-xsmall: 1.2em;
+    --font-display: 4.6rem;
+    --font-jumbo: 3.8rem;
+    --font-xlarge: 3rem;
+    --font-medium: 1.8rem;
+    --font-small: 1.6rem;
+    --font-xsmall: 1.2rem;
 
     /*Spacing*/
     --spacing-128: 12.8rem;
@@ -59,7 +60,7 @@ html {
 a {
     font-family: inherit;
     text-decoration: none;
-    font-size: 2em;
+    /*font-size: 2em;*/
     color: inherit;
 }
 
@@ -76,7 +77,7 @@ ul, ol {
 }
 
 p {
-    font-size: 1.8em;
+    font-size: 1.8rem;
 }
 
 .container {
