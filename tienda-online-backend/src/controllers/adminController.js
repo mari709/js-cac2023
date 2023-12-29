@@ -1,5 +1,5 @@
 const path = require('path');
-const { getAll, getOne } = require('../models/productModels');
+const { getAll, getOne, create } = require('../models/productModels');
 
 module.exports = {
     adminView: async (req, res) => {
@@ -20,7 +20,32 @@ module.exports = {
     },
 
 
-    createItem:  (req, res) => res.send('Create Route that receive a new item data to add in Database'),
+    createItem: async  (req, res) => {
+      //console.log(req.body);
+      //console.log(req.files);
+
+      //importante el orden ya que se crea en este orden
+      const product_schema = {
+        product_name: req.body.name,
+        product_description: req.body.description,
+        price: Number(req.body.price),
+        stock: Number(req.body.stock),
+        discount: Number(req.body.discount),
+        sku: req.body.sku,
+        dues: Number(req.body.dues),
+        image_front: req.files[0].originalname,
+        image_back: req.files[1].originalname,
+        licence_id: Number(req.body.licence),
+        category_id: Number(req.body.category)
+      }
+
+      await create([Object.values(product_schema)]);
+      res.redirect('/admin');
+      
+      //console.log( "array: ", [Object.values(product_schema)]);
+      //console.log(result);
+      //res.send('Create Route that receive a new item data to add in Database');
+    },
     
     editView: async (req, res) =>{
       const { id } = req.params;
