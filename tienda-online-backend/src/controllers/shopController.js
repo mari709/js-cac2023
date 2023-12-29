@@ -122,16 +122,15 @@ module.exports = {
   },
 
   itemView: async (req, res) => { //no olvidar que es asincrona
-    const itemId = req.params.id;
-
-    //const item = json.find(item => item.product_id ==itemId);
-    const [item] = await getOne(itemId); //recordar await
+    const { id } = req.params;
+    const [item2]= await getOne({ product_id: id });
+    //console.log(item);
     res.render(path.resolve(__dirname, '../views/shop/item.ejs'),
       {
         
         title: "Item",
-        item
-      })
+        item2
+      });
   },
 
   addItemToCart: (req, res) => res.send('Route to add a item to cart'),
