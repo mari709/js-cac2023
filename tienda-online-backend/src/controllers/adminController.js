@@ -23,6 +23,7 @@ module.exports = {
     createItem: async  (req, res) => {
       //console.log(req.body);
       //console.log(req.files);
+      //res.send('Ítem creado exitosamente');
 
       //importante el orden ya que se crea en este orden
       const product_schema = {
@@ -33,8 +34,8 @@ module.exports = {
         discount: Number(req.body.discount),
         sku: req.body.sku,
         dues: Number(req.body.dues),
-        image_front: req.files[0].originalname,
-        image_back: req.files[1].originalname,
+        image_front: '/products/'+req.files[0].filename,
+        image_back: '/products/'+req.files[1].filename,
         licence_id: Number(req.body.licence),
         category_id: Number(req.body.category)
       }
