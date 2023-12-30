@@ -1,5 +1,5 @@
 const path = require('path');
-const { getAll, getOne, create } = require('../models/productModels');
+const { getAll, getOne, create, deleteOne } = require('../models/productModels');
 
 module.exports = {
     adminView: async (req, res) => {
@@ -59,5 +59,15 @@ module.exports = {
       })
     },
     editItem:  (req, res) => res.send('Edit Route that receive data to modify an item in Database'),
-    deleteItem:  (req, res) => res.send('Delete Route that receive the ID to the item to delete from database'),
+
+    deleteItem:  async (req, res) => {
+      const { id } = req.params;
+      //res.send('quieres borrar el item ' + id);
+      
+      
+      await deleteOne({ product_id : id });
+      res.redirect('/admin');
+      
+      
+    }
   };

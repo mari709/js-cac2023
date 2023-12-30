@@ -47,10 +47,23 @@ const create = async(params) =>   {
 }
 
 
-
+const deleteOne = async(params) =>   {
+    try {
+        const [product] = await conn.query('DELETE FROM product WHERE ?', params);
+        return product;
+    } catch (error) {
+        return {
+            error: true,
+            message: 'hemos encontrado un error en: ' + error
+        } 
+    } finally {
+        conn.releaseConnection();
+    }
+}
 
 module.exports = {
     getAll, 
     getOne,
-    create
+    create,
+    deleteOne
 }
