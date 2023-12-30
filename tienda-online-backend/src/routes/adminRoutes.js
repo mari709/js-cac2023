@@ -16,11 +16,9 @@ const {
 
 router.get('/', adminView);
 router.get('/create', createView);
-
 router.post('/create', upload.array('images',2), createItem);/* ambos inputs con el mismo name*/
-
 router.get('/edit/:id', editView);
-router.put('/edit/:id', editItem);
+router.put('/edit/:id', upload.array('images',2), editItem);
 router.delete('/delete/:id', deleteItem);
 
 
