@@ -34,9 +34,8 @@
   resize: vertical;
 }
 
-
+/*
 button[type="submit"] {
-   /* font-size: var(--font-medium);*/
     cursor: pointer;
     width: 100%;
     padding: 1rem;
@@ -50,6 +49,7 @@ button[type="submit"] {
     -ms-transition: all 0.3s;
     transition: all 0.3s;
   }
+  */
 
   .btn-contact:hover {
     background-color: var(--dark-solid);

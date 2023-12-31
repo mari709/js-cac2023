@@ -70,3 +70,11 @@
 .admin-table__header {
     margin-bottom: var(--spacing-24);
 }
+
+.admin-table__row button, .admin-table__row a {
+    background-color: transparent;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+

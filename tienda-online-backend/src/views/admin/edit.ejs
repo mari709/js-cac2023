@@ -4,11 +4,11 @@
         <div class="section-titulos-principales">
             <h2 class="edit__title section-titulos-principales">EDITAR ITEM</h2>
         </div>
-        <form class="edit__form" action="/admin/edit" method="POST" enctype="application/x-www-form-urlencoded">
+        <form class="edit__form" action="/admin/edit/<%= product.product_id %>?_method=PUT" method="POST" enctype="multipart/form-data">
             <div class="form__flex">
                 <div class="form__box--flex">
-                    <label class="form__label" for="collection">Categoría:</label>
-                    <select class="form__select" name="collection" id="collection" required>
+                    <label class="form__label" for="category">Categoría:</label>
+                    <select class="form__select" name="category" id="category" required>
                         <option value="1" <%= product.category_id == 1 ? 'selected' : '' %>>Figuras Coleccionables</option>
                         <option value="2" <%= product.category_id == 2 ? 'selected' : '' %>>Remeras</option>
                         <option value="3" <%= product.category_id == 3 ? 'selected' : '' %>>Llaveros</option>
@@ -16,8 +16,8 @@
                     
                 </div>
                 <div class="form__box--flex">
-                    <label class="form__label" for="collection">Licencia:</label>
-                    <select class="form__select" name="collection" id="collection" required>
+                    <label class="form__label" for="licence">Licencia:</label>
+                    <select class="form__select" name="licence" id="licence" required>
                         <!-- si la condicion es verdadera agrego el atributo selected-->
                         <option value="1" <%= product.licence_id == 1 ? 'selected' : '' %>>Pokemon</option>
                         <option value="2" <%= product.licence_id == 2 ? 'selected' : '' %>>Star Wars</option>
@@ -87,16 +87,19 @@
                 </div>
             </div>
             <div class="form__box--flex">
-                <label class="form__label" for="images">Imagenes:</label>
-                <input type="file" name="images" id="img" multiple>
+                <label class="form__label" for="image1_edit">imagen 1</label>
+                <input type="file" name="images" id="image1_edit" accept="image/*">
+
+                <label class="form__label" for="image2_edit">imagen 2</label>
+                <input type="file" name="images" id="image2_edit" accept="image/*">
             </div>
             <div class="form__box--flex">
                 <div class="edit__img">
-                    <img src="/img/<%=product.image_front %>" alt="Figura Funko coleccionable de Hermione">
+                    <img src="/img/<%=product.image_front %>" alt="<%=product.image_front %>">
                     <p class="edit__img-side">Frente</p>
                 </div>
                 <div class="edit__img">
-                    <img src="/img/<%=product.image_back %>" alt="Figura Funko coleccionable de Hermione en caja">
+                    <img src="/img/<%=product.image_back %>" alt="<%=product.image_back %>">
                     <p class="edit__img-side">Dorso</p>
                 </div>
             </div>
