@@ -12,7 +12,7 @@
 </style></style><div id="cuenta-regresiva"></div>
 
 <script>
-const fechaFinalizacion = new Date('2023-11-23T23:59:59').getTime();//me devuelve el tiempo en milisegundos
+const fechaFinalizacion = new Date('2024-11-23T23:59:59').getTime();//me devuelve el tiempo en milisegundos
 
 const intervalo = setInterval(actualizarCuentaRegresiva, 1000);//setinterval es una funcion en js que se utiliza para repetir la ejecucion de una funcion a intervalos regulares
 //actualizarCuentaRegresiva es la funcion que se ejecuta en cada intervalo
@@ -22,13 +22,13 @@ function actualizarCuentaRegresiva() {
   const fechaActual = new Date().getTime();
   const diferencia = fechaFinalizacion - fechaActual;
 
-  /*const dias = Math.floor(diferencia / (1000 * 60 * 60 * 24));*/
+  const dias = Math.floor(diferencia / (1000 * 60 * 60 * 24));
   const horas = Math.floor((diferencia % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));//calculo el resto de la division de la diferencia por el numero total de milisegundos en un dia
   const minutos = Math.floor((diferencia % (1000 * 60 * 60)) / (1000 * 60));
   const segundos = Math.floor((diferencia % (1000 * 60)) / 1000);
 
   const cuentaRegresivaElemento = document.getElementById('cuenta-regresiva');
-  cuentaRegresivaElemento.innerHTML = `Promoción comienza en: ${horas}h ${minutos}m ${segundos}s`;
+  cuentaRegresivaElemento.innerHTML = `Promoción comienza en: ${dias}d ${horas}h ${minutos}m ${segundos}s`;
 
   if (diferencia < 0) {
     clearInterval(intervalo);//detiene la actualizacion al llegar a 0
